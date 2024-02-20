@@ -4,7 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="320a8f1a-25a8-48ec-aa03-9aceebb2694c" name="Changes" comment="mvn tests">
+    <list default="true" id="320a8f1a-25a8-48ec-aa03-9aceebb2694c" name="Changes" comment="fix build for sonarcloud?">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/GameBoardTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/GameBoardTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -70,7 +71,16 @@
       <recent name="" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.GameBoardTest.testRevealTile">
+  <component name="RunManager" selected="JUnit.TileTest">
+    <configuration name="GameBoardTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="MavenMinesweeper" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="GameBoardTest" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="GameBoardTest.testMinesAround" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="MavenMinesweeper" />
       <option name="PACKAGE_NAME" value="" />
@@ -101,8 +111,19 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="TileTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="MavenMinesweeper" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="TileTest" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.TileTest" />
+        <item itemvalue="JUnit.GameBoardTest" />
         <item itemvalue="JUnit.GameBoardTest.testRevealTile" />
         <item itemvalue="JUnit.GameBoardTest.testRevealAround" />
         <item itemvalue="JUnit.GameBoardTest.testMinesAround" />
@@ -189,7 +210,15 @@
       <option name="project" value="LOCAL" />
       <updated>1708444185165</updated>
     </task>
-    <option name="localTasksCounter" value="9" />
+    <task id="LOCAL-00009" summary="fix build for sonarcloud?">
+      <option name="closed" value="true" />
+      <created>1708444613120</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1708444613120</updated>
+    </task>
+    <option name="localTasksCounter" value="10" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
@@ -200,6 +229,7 @@
     <MESSAGE value="more tests" />
     <MESSAGE value="made stuff public + even more tests" />
     <MESSAGE value="mvn tests" />
-    <option name="LAST_COMMIT_MESSAGE" value="mvn tests" />
+    <MESSAGE value="fix build for sonarcloud?" />
+    <option name="LAST_COMMIT_MESSAGE" value="fix build for sonarcloud?" />
   </component>
 </project>

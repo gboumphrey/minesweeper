@@ -20,7 +20,7 @@ public class GameBoardTest {
     @Test
     public void testRevealAround() {
         GameBoard a = new GameBoard(3,3,1);
-        GameBoard.board[1][1].setNumber(0);
+        a.board[1][1].setNumber(0);
         a.revealTile(1,1);
         Assertions.assertEquals(0, a.board[0][0].reveal(), "tile isnt revealed");
         Assertions.assertEquals(0, a.board[0][1].reveal(), "tile isnt revealed");
