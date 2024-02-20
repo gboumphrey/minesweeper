@@ -14,7 +14,7 @@ public class GameBoardTest {
     public void testRevealTile() {
         GameBoard a = new GameBoard(3,3,1);
         a.revealTile(1,1);
-        Assertions.assertEquals(0, GameBoard.board[1][1].reveal(), "tile isnt revealed");
+        Assertions.assertEquals(0, a.board[1][1].reveal(), "tile isnt revealed");
     }
 
     @Test
@@ -22,14 +22,14 @@ public class GameBoardTest {
         GameBoard a = new GameBoard(3,3,1);
         GameBoard.board[1][1].setNumber(0);
         a.revealTile(1,1);
-        Assertions.assertEquals(0, GameBoard.board[0][0].reveal(), "tile isnt revealed");
-        Assertions.assertEquals(0, GameBoard.board[0][1].reveal(), "tile isnt revealed");
-        Assertions.assertEquals(0, GameBoard.board[0][2].reveal(), "tile isnt revealed");
-        Assertions.assertEquals(0, GameBoard.board[1][0].reveal(), "tile isnt revealed");
-        Assertions.assertEquals(0, GameBoard.board[1][1].reveal(), "tile isnt revealed");
-        Assertions.assertEquals(0, GameBoard.board[1][2].reveal(), "tile isnt revealed");
-        Assertions.assertEquals(0, GameBoard.board[2][0].reveal(), "tile isnt revealed");
-        Assertions.assertEquals(0, GameBoard.board[2][1].reveal(), "tile isnt revealed");
-        Assertions.assertEquals(0, GameBoard.board[2][2].reveal(), "tile isnt revealed");
+        Assertions.assertEquals(0, a.board[0][0].reveal(), "tile isnt revealed");
+        Assertions.assertEquals(0, a.board[0][1].reveal(), "tile isnt revealed");
+        Assertions.assertEquals(0, a.board[0][2].reveal(), "tile isnt revealed");
+        Assertions.assertEquals(0, a.board[1][0].reveal(), "tile isnt revealed");
+        Assertions.assertEquals(0, a.board[1][1].reveal(), "tile isnt revealed");
+        Assertions.assertEquals(0, a.board[1][2].reveal(), "tile isnt revealed");
+        Assertions.assertEquals(0, a.board[2][0].reveal(), "tile isnt revealed");
+        Assertions.assertEquals(0, a.board[2][1].reveal(), "tile isnt revealed");
+        Assertions.assertEquals(0, a.board[2][2].reveal(), "tile isnt revealed");
     }
 }
