@@ -4,13 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="320a8f1a-25a8-48ec-aa03-9aceebb2694c" name="Changes" comment="more tests">
-      <change afterPath="$PROJECT_DIR$/src/test/java/GameBoardTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/GameBoard.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/GameBoard.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/TileTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/TileTest.java" afterDir="false" />
-    </list>
+    <list default="true" id="320a8f1a-25a8-48ec-aa03-9aceebb2694c" name="Changes" comment="made stuff public + even more tests" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -58,6 +52,7 @@
   "keyToString": {
     "Application.Main.executor": "Run",
     "JUnit.GameBoardTest.testMinesAround.executor": "Run",
+    "JUnit.GameBoardTest.testRevealAround.executor": "Run",
     "JUnit.GameBoardTest.testRevealTile.executor": "Run",
     "JUnit.TileTest.executor": "Run",
     "RunOnceActivity.OpenProjectViewOnStart": "true",
@@ -176,7 +171,15 @@
       <option name="project" value="LOCAL" />
       <updated>1708435188149</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="made stuff public + even more tests">
+      <option name="closed" value="true" />
+      <created>1708443634227</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1708443634227</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
@@ -185,6 +188,7 @@
     <MESSAGE value="unit test" />
     <MESSAGE value="mvn clean test" />
     <MESSAGE value="more tests" />
-    <option name="LAST_COMMIT_MESSAGE" value="more tests" />
+    <MESSAGE value="made stuff public + even more tests" />
+    <option name="LAST_COMMIT_MESSAGE" value="made stuff public + even more tests" />
   </component>
 </project>
