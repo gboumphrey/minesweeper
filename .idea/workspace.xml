@@ -4,7 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="320a8f1a-25a8-48ec-aa03-9aceebb2694c" name="Changes" comment="sonarcloud setup">
+    <list default="true" id="320a8f1a-25a8-48ec-aa03-9aceebb2694c" name="Changes" comment="unit test">
       <change afterPath="$PROJECT_DIR$/src/test/java/TileTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
@@ -53,6 +53,7 @@
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
     "Application.Main.executor": "Run",
+    "JUnit.TileTest.executor": "Run",
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "git-widget-placeholder": "master",
@@ -106,13 +107,22 @@
       <option name="project" value="LOCAL" />
       <updated>1708425328306</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="unit test">
+      <option name="closed" value="true" />
+      <created>1708427070216</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1708427070216</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="maven minesweeper" />
     <MESSAGE value="sonarcloud setup" />
-    <option name="LAST_COMMIT_MESSAGE" value="sonarcloud setup" />
+    <MESSAGE value="unit test" />
+    <option name="LAST_COMMIT_MESSAGE" value="unit test" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
