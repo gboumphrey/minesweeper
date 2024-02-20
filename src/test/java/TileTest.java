@@ -28,8 +28,24 @@ public class TileTest {
     @Test
     public void testDraw() {
         Tile a = new Tile();
-        Assertions.assertEquals(' ',a.drawTile(), "didnt match");
+        Assertions.assertEquals(' ',a.drawTile(), "didnt match space");
         a.toggleFlagged();
         Assertions.assertEquals('F', a.drawTile(), "flag didnt match");
+        a.toggleFlagged();
+        a.setNumber(3);
+        a.reveal();
+        Assertions.assertEquals('3',a.drawTile(),"didnt match number");
+    }
+
+    @Test
+    public void testReveal() {
+        Tile a = new Tile();
+        a.setNumber(3);
+        a.toggleFlagged();
+        Assertions.assertEquals(-1,a.reveal(), "didnt return flagged");
+        a.toggleFlagged();
+        Assertions.assertEquals(3,a.reveal(),"didnt reveal");
+        Assertions.assertEquals(0,a.reveal(),"revealed when shouldnt");
+
     }
 }

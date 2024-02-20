@@ -4,20 +4,6 @@ public class Main {
     public static Scanner reader = new Scanner(System.in);
     public static boolean gameOver = false;
 
-    public static void interpret(String input, GameBoard board) {
-        try {
-            String[] split = input.split(" ");
-            if (split[0].equalsIgnoreCase("flag")) {
-                board.flagTile(split[1].charAt(1)-65,split[1].charAt(0)-65);
-            } else if (split[0].equalsIgnoreCase("reveal")) {
-                board.revealTile(split[1].charAt(1)-65,split[1].charAt(0)-65);
-            } else {
-                System.out.println("Command wasn't recognised.");
-            }
-        } catch (Exception e) {
-            System.out.println("Coordinate wasn't recognised. " + e);
-        }
-    }
     private static int tryParseInt(String s) {
         try {
             return Math.abs(Integer.parseInt(s));
@@ -26,7 +12,6 @@ public class Main {
             return 0;
         }
     }
-
     public static void main(String[] args) {
 
         // set variables

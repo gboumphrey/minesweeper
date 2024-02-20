@@ -27,16 +27,11 @@ public class GameBoard implements MouseListener {
                 frame.add(buttons[i][j]);
             }
         }
-        if(columns<30 && rows<30 && mines<rows*columns) {
-            frame.setLayout(new GridLayout(rows, columns));
-            frame.setVisible(true);
-            populateBoard(rows, columns, mines);
-        } else {
-            System.out.println("Invalid board configuration");
-            Main.gameOver = true;
-        }
+        frame.setLayout(new GridLayout(rows, columns));
+        frame.setVisible(true);
+        populateBoard(rows, columns, mines);
     }
-    private void populateBoard(int rows, int columns, int mines) {
+    public void populateBoard(int rows, int columns, int mines) {
         //populate the board with mines
         for(int i = 0; i<mines; i++) {
             boolean inProgress = true;
@@ -56,7 +51,7 @@ public class GameBoard implements MouseListener {
             }
         }
     }
-    private int minesAround(int x, int y) {
+    public int minesAround(int x, int y) {
         if(board[x][y].getNumber() == 9){return 9;} //do not overwrite mines
         int count = 0;
         for(int i = x-1; i<=x+1; i++) {
@@ -104,7 +99,7 @@ public class GameBoard implements MouseListener {
         int number = board[x][y].toggleFlagged();
         flags += number;
     }
-    private void revealAround(int x, int y) {
+    public void revealAround(int x, int y) {
         for(int i = x-1; i<=x+1; i++) {
             for(int j = y-1; j<=y+1; j++){
                 try {
